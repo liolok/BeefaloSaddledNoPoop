@@ -2,7 +2,7 @@ local function T(en, zh, zht) return ChooseTranslationTable({ en, zh = zh, zht =
 
 name = T('Beefalo Saddled No Poop', '牛牛有鞍不拉屎')
 author = T('liolok', '李皓奇')
-version = '1.2.0'
+version = '2.0.0'
 description = T(
   'Woodie: "Don\'t poop in camp!"',
   '伍迪：“不要在营地里拉大便！”',
