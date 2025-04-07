@@ -1,13 +1,11 @@
 AddPrefabPostInit('beefalo', function(inst)
-  -- On obedience changes, check tamed status and determine to stop pooping.
-  inst:ListenForEvent('obediencedelta', function(inst)
-    local tamed = inst.components.domesticatable:IsDomesticated()
+  inst:ListenForEvent('saddlechanged', function(inst, data)
     local poop_spawner = inst.components.periodicspawner
-    if tamed and poop_spawner then poop_spawner:Stop() end
-  end)
-  -- On beefalo gone feral, restart pooping.
-  inst:ListenForEvent('goneferal', function(inst)
-    local poop_spawner = inst.components.periodicspawner
-    if poop_spawner then poop_spawner:Start() end
+    if not poop_spawner then return end
+    if data and data.saddle then
+      poop_spawner:Stop()
+    else
+      poop_spawner:Start()
+    end
   end)
 end)

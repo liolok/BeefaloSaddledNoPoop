@@ -1,12 +1,13 @@
 local function T(en, zh, zht) return ChooseTranslationTable({ en, zh = zh, zht = zht or zh }) end
 
-name = T('Beefalo Tamed No Poop', '驯牛不拉屎')
+name = T('Beefalo Saddled No Poop', '牛牛有鞍不拉屎')
 author = T('liolok', '李皓奇')
 version = '1.2.0'
 description = T(
-  "Once a beefalo gets tamed, it won't drop manure any more.\nWhen it goes feral, it will start pooping around again.",
-  '野牛一旦被驯化，将不再掉落粪便；变回野牛则会再次开始四处大便。'
-) .. '\n󰀰 ' .. version -- Florid Postern（绚丽之门）
+  'Woodie: "Don\'t poop in camp!"',
+  '伍迪：“不要在营地里拉大便！”',
+  '伍迪：「不要在營地里拉大便！」'
+) .. '\n󰀑 ' .. version -- poop emoji
 
 -- Compatibility | 兼容性
 dst_compatible = true -- Taming beefalo is only available in DST | 仅可在饥荒联机版驯牛
