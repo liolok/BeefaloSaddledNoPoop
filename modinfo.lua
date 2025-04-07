@@ -1,8 +1,10 @@
-name = "Beefalo Tamed No Poop"
-author = "liolok"
-version = "1.2.0"
-description = "Version: " .. version .. "\n" ..
-[[
+name = 'Beefalo Tamed No Poop'
+author = 'liolok'
+version = '1.2.0'
+description = 'Version: '
+  .. version
+  .. '\n'
+  .. [[
 Once a beefalo gets tamed, it won't drop manure any more.
 When it goes feral, it will start pooping around again.
 ]]
@@ -20,5 +22,5 @@ server_only_mod = true
 all_clients_require_mod = false
 
 -- Icon in mod list | 在 Mod 列表中的图标
-icon_atlas = "modicon.xml"
-icon = "modicon.tex"
+icon_atlas = 'modicon.xml'
+icon = 'modicon.tex'
